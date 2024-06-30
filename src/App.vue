@@ -1,17 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex flex-row p-4 gap-10">
+    <div class="flex flex-col">
+      <h2 class="text-3xl">Buttons</h2>
+      <div class="border border-bottom h-full"></div>
+      <AButton>Primary button</AButton>
+      <AButton type="secondary">Secondary button</AButton>
+      <AButton type="outline"> Outline button </AButton>
+      <AButton type="text">Text button</AButton>
+    </div>
+    <div class="flex flex-col">
+      <h2 class="text-3xl">Input</h2>
+      <div class="border border-bottom h-full"></div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AButton from "@/components/Button/AButton.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AButton,
+  },
+};
 </script>
 
 <style>
